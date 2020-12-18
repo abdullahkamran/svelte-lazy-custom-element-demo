@@ -1,5 +1,5 @@
 <script>
-	export let name = "";
+	export let name = "Default Name";
 	let firstName = "";
 
 	$: firstName = name.split(" ")[0];
@@ -11,7 +11,7 @@
 	}
 </style>
 
-<svelte:options tag="my-component" />.
+<svelte:options tag="my-component" />
 <main>
 	<h1>Name: {name}!</h1>
 	<h2>First name is: {firstName}</h2>
